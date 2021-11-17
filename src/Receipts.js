@@ -6,8 +6,9 @@ function Receipts(props) {
     return (
         <div className="container">
             {props.initialState.map(data => {
+                if (data.paid === false) {
                return <Receipt data={data} />
-            })}
+}})}
         </div>
     )
 }

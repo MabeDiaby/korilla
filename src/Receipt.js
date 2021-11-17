@@ -1,4 +1,6 @@
 import React from 'react';
+import Receipts from './Receipts';
+import App from './App';
 import './Receipt.css'
 
 function Receipt(props) {
