@@ -1,20 +1,15 @@
 import React from 'react';
+import Receipt from './Receipt';
 import './Receipt.css'
 
-function Receipt(props) {
+function Receipts(props) {
     return (
-        <div className = 'receipt'>
-            <span>
-            {/* {console.log(props.initialState[0])} */}
-            <h2>{props.initialState[0].person}</h2>
-                <p><span>Main:</span> {props.initialState[0].order.main}</p>
-                <p><span>Protein:</span> {props.initialState[0].order.protein}</p>
-                <p><span>Rice: </span>{props.initialState[0].order.rice}</p>
-                <p><span>Sauce: </span>{props.initialState[0].order.sauce}</p>
-                <p><span>Drink: </span>{props.initialState[0].order.drink}</p>
-            </span>
+        <div className="container">
+            {props.initialState.map(data => {
+               return <Receipt data={data} />
+            })}
         </div>
-    );
+    )
 }
 
-export default Receipt;
+export default Receipts;

@@ -1,6 +1,7 @@
 import React  from 'react';
 import './App.css';
 import Receipts from './Receipts';
+import './Receipt.css'
 
 
 const initialState = [

@@ -6,5 +6,7 @@
 }
 
 span {
-  color: indigo;
+  color: rgb(120, 7, 201);
+  /* color: indigo; */
+  font-weight: bold;
 }
