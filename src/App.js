@@ -2,6 +2,7 @@ import React  from 'react';
 import './App.css';
 import Receipts from './Receipts';
 import './Receipt.css'
+import {useState} from 'react'
 
 
 const initialState = [
@@ -52,13 +53,28 @@ const initialState = [
 // const [receiptState, setReceiptState] = useState(initialState)
 
 function App() {
+
+  // const [paid, setPaid] = useState(initialState.paid)
+  // const [formState, setFormState] = useState(initialState)
+
+  // const paymentClicked = ev => {
+  //   ev.preventDefault()
+  //   setFormState({...formState, [formState.paid] : true})
+  // }
+
+//   const togglePaid = () => {
+//     initialState.paid = true
+//     console.log({togglePaid});
+// }
   return (
     <>
       <header>
         <h1 className="name">Korilla</h1>
-        <Receipts initialState={initialState}/>
+        <Receipts initialState={initialState} paid={initialState.paid}/>
       </header>
-      <main></main>
+      <main>
+
+      </main>
     </>
   );
 }

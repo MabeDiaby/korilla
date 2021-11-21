@@ -1,8 +1,10 @@
 import React from 'react';
+// import { useState } from 'react';
 import Receipt from './Receipt';
 import './Receipt.css'
 
 function Receipts(props) {
+    
     return (
         <div className="container">
             {props.initialState.map(data => {
